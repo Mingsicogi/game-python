@@ -4,7 +4,7 @@
 1. $pip3 install pygame
 
 
-# Game screen shot
+# Game Screen Shot
 
 ![image](./demo1_screen1.png)
 
