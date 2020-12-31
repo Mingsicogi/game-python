@@ -4,7 +4,7 @@
 1. $pip3 install pygame
 
 
-# Avoiding DDONG
+# Game screen shot
 
 ![image](./demo1_screen1.png)
 
