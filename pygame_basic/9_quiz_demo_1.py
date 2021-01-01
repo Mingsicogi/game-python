@@ -148,7 +148,7 @@ while game_start:
 
         pygame.display.update() # 화면 업데이트
     
-    
+    # Game Over 화면에서 핸들링을 위한 처리
     event = pygame.event.wait(1000)
     if event.type == pygame.KEYDOWN:
         if event.key == pygame.K_SPACE:
@@ -179,6 +179,3 @@ while game_start:
 
 # pygame 종료
 pygame.quit()
-
-
-
