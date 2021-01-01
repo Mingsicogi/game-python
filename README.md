@@ -8,4 +8,7 @@
 
 ![image](./demo1_screen1.png)
 
+![image](./demo1_screen3.png)
+
 ![image](./demo1_screen2.png)
+

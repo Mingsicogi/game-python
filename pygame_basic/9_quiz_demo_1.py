@@ -75,7 +75,7 @@ def game_start_draw_screen(character_x_pos, character_y_pos):
 
 # 레벨 난이도에 따라 똥 갯수를 검사하고 생성함
 def check_ddong_count(score, level):
-    if score > 0 and score % (reward_basic_score * level_increase_interval * level) == 0: # 레벨 마다 지정된 횟수를 피하면 레벨업.
+    if score > 0 and score % (reward_basic_score * level_increase_interval * level) == 0 or level == 1: # 레벨 마다 지정된 횟수를 피하면 레벨업.
         for i in range((ddong_count_by_level * (level + 1)) - len(ddong_list)):
             new_ddong =  Ddong(ddong_image, random.randrange(0, screen_width - ddong_image.get_width()), 0)
             ddong_list.append(new_ddong)
@@ -166,6 +166,8 @@ while game_start:
             ddong_list = [ddong]
 
             game_start_draw_screen((screen_width / 2) - (character_width / 2), screen_height - character_height)
+
+            level = 1
             running = True
             game_start = True
             
